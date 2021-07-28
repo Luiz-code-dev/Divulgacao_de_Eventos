@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xml>
+<!-- É TIPO UMA EXTENSÃO DAS CONFIGURAÇÕES DO WELD p/ oTOMCAT -->
+<Context>
+	<Manager pathname="" />
+	
+	<Resource 
+		auth="Container"
+		name="BeanManager"
+		type="javax.enterprise.inject.spi.BeanManager"
+		factory="org.jboss.weld.resources.ManagerObjectFactory" />
+</Context>
