@@ -17,7 +17,7 @@ Eclipse IDE para Java EE
 Banco de dados: PostgreSQl
 
 # Objetivo:
-Desenvolver um sistema CRUD MVC simples para gerar um portal de divulgação de eventos esportivos.
+Desenvolver um sistema CRUD MVC para gerar um portal de divulgação de eventos esportivos.
 
 # Detalhes:
 O portal deve gerar as informações:
