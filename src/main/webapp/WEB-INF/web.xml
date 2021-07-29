@@ -4,7 +4,9 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
-         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID">
+
 
 
 	<display-name>evento_esportivo</display-name>
@@ -26,6 +28,13 @@
 
 	<servlet-mapping>
 		<servlet-name>Faces Servlet</servlet-name>
-		<url-pattern>*.xhtml</url-pattern>
+		<url-pattern>*.html</url-pattern>
 	</servlet-mapping>
+
+	<error-page>
+		<exception-type>org.tesi.com.identity.sso.agent.SSOAgentException</exception-type>
+		<location>/errors.jsp</location>
+	</error-page>
+
+
 </web-app>

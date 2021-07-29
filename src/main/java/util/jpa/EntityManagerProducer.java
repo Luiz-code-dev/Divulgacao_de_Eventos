@@ -7,8 +7,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import com.sun.faces.action.RequestMapping;
-
 
 
 @ApplicationScoped
@@ -20,7 +18,6 @@ public class EntityManagerProducer {
 		factory = Persistence.createEntityManagerFactory("EventoPU");
 	}
 	
-	@RequestMapping
 	@Produces 
 	public EntityManager createEntityManager() {
 		return factory.createEntityManager();

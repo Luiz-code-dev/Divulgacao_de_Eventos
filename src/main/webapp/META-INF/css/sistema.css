@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	font-weight: normal;
+	
+}
+
+header {
+	padding: 5px 0px;
+	margin-bottom: 20px;
+	height: 50px;
+	
+	background: #545454;
+	color: #fff;
+	
+	box-shadow: 0px 2px 2px #ccc;
+}
+
+header > div {
+	margin-left: 8px;
+}
+
+
+#conteudo {
+	padding: 0px 8px;
+}
+
+
+footer {
+	padding: 0px 8px;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 0px;
+	margin: 0px;	
+	
+}
+
+
+#login-dialog {
+	width:300px;
+	margin:auto;
+	margin-top: 150px;
+}
+
+#login-dialog > h1 {
+	text-align: center;
+}
+
+.grid-login {
+	background: #f2f2f2;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	margin-top: 8px;
+	padding:10px;
+}
+
+#botaoSalvar {
+	margin-left: 20px;
+}
+
+.rotulo {
+	width: 150px;
+}
+
+.ajax-status {
+	position: fixed;
+	top: 55px;
+	margin-right: 120px;
+	width: 35px;
+	height: 35px;
+}
+
+
+span .ui-autocomplete.produto-tabela input {
+	width:200px;
+}
+
+.menu-sistema {
+	border: 0px !important;
+	padding: 0px !important;
+	background: #545454 !important;
+}
+
+
+body .ui-menu .ui-menu-list .ui-menuitem.ui-menuitem > .ui-menuitem-link .ui-menuitem-text, body .ui-menu .ui-menu-list .ui-menuitem.ui-menuitem > .ui-menuitem-link .ui-menuitem-icon, body .ui-menu .ui-menu-list .ui-menuitem.ui-menuitem > .ui-menuitem-link .ui-icon {
+   color: white;
+}
+
+
+
+ul.ui-menu-list, ul li.ui-menuitem>a {
+	background-color: #545454 !important;  
+}
+
+li ul li.ui-menuitem {
+	margin-top:50px;
+}
+
+
+li ul li.ui-menuitem-active>a{
+    background-image: none !important;
+    background-color:#444444 !important; 
+    transition: background-color 1s ease; 
+      
+}
+
+
+
+
+
+

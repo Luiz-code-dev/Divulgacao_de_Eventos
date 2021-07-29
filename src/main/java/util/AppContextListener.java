@@ -1,12 +1,13 @@
 package util;
 
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
 import javax.validation.constraints.NotBlank;
 
 import org.primefaces.validate.bean.BeanValidationMetadataMapper;
 import org.primefaces.validate.bean.NotBlankClientValidationConstraint;
+
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
+import jakarta.servlet.annotation.WebListener;
 
 @WebListener
 public class AppContextListener implements ServletContextListener {
