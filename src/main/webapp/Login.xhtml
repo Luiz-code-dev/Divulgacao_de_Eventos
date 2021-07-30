@@ -2,37 +2,92 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui">
+<head>
+<title>Login</title>
+ 
 
-<h:head>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Login</title>
-	<h:outputStylesheet library="css" name="sistema.css" />
+	<h:outputStylesheet library="css" name="style.css" />
+<h:script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></h:script>
+<h:script src="semantic/dist/semantic.min.js"></h:script>
 
-</h:head>
+</head>
+<body>
+	<div class="container">
+		<a class="links" id="paracadastro"></a> <a class="links"
+			id="paralogin"></a>
 
-<h:body>
+		<div class="content">
+			<!--FORMULÁRIO DE LOGIN-->
+			<div id="login">
+				<form method="post" action="">
+					<h1>Login</h1>
+					<p>
+						<label for="nome_login">Seu nome</label> <input id="nome_login"
+							name="nome_login" required="required" type="text"
+							placeholder="ex. contato@htmlecsspro.com" />
+					</p>
 
-	<div id="login-dialog">
-		<h1>Sistema JSF</h1>
-		
+					<p>
+						<label for="email_login">Seu e-mail</label> <input
+							id="email_login" name="email_login" required="required"
+							type="password" placeholder="ex. senha" />
+					</p>
 
-		<h:form>
-			<p:messages id="messages" />
-			<p:panelGrid columns="2">
-				<p:outputLabel for="nomeUsuario" value="Nome
-      Usuário:" />
-				<p:inputText id="nomeUsuario" value="#{LoginMB.usuario.nomeUsuario}" />
+					<p>
+						<input type="checkbox" name="manterlogado" id="manterlogado"
+							value="" /> <label for="manterlogado">Manter-me logado</label>
+					</p>
 
-				<p:outputLabel for="senha" value="Senha:" />
-				<p:password id="senha" value="#{LoginMB.usuario.senha}" />
+					<p>
+						<input type="submit" value="Logar" />
+					</p>
 
-				<p:commandButton value="Enviar" icon="ui-icon-star"
-					action="#{LoginMB.envia}" ajax="false">
-				</p:commandButton>
+					<p class="link">
+						Ainda não tem conta? <a href="Cadastro.xhtml">Cadastre-se</a>
+					</p>
+				</form>
+			</div>
 
-			</p:panelGrid>
-		</h:form>
+			<!--FORMULÁRIO DE CADASTRO-->
+			<div id="link">
+				<form method="post" action="">
+
+					<h1>Cadastro</h1>
+
+					<p>
+						<label for="nome_cad">Seu nome</label> <input id="nome_cad"
+							name="nome_cad" required="required" type="text"
+							placeholder="nome" />
+					</p>
+
+					<p>
+						<label for="email_cad">Seu e-mail</label> <input id="email_cad"
+							name="email_cad" required="required" type="email"
+							placeholder="contato@htmlecsspro.com" />
+					</p>
+
+					<p>
+						<label for="senha_cad">Sua senha</label> <input id="senha_cad"
+							name="senha_cad" required="required" type="password"
+							placeholder="ex. 1234" />
+					</p>
+
+					<p>
+						<input type="submit" value="Cadastrar" />
+					</p>
+
+					<p class="Cadastro.xhtml">
+						Já tem conta? <a href="Cadastro.xhtml"> Ir para Cadastro </a>
+					</p>
+
+				</form>
+			</div>
 		</div>
-</h:body>
+	</div>
+</body>
 </html>

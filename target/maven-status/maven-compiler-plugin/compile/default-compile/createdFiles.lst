@@ -1,16 +1,5 @@
 Controller\Connect.class
-util\cdi\CDIServiceLocator.class
-util\jpa\Transactional.class
 model\Usuario.class
-util\jpa\TransactionInterceptor.class
 model\Categoria.class
-repository\Categorias.class
-util\jpa\EntityManagerProducer.class
-Controller\LoginBean.class
-defaultPackage\Teste.class
-model\Evento.class
-Controller\UsuarioManagedBean.class
 repository\Usuarios.class
 util\jsf\FacesUtil.class
-util\AppContextListener.class
-util\jsf\FacesProducer.class

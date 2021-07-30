@@ -6,7 +6,6 @@
 	<artifactId>EventoEsportivo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
 	<properties>
 		<java.version>11</java.version>
 		<compiler.version>3.8.1</compiler.version>
@@ -157,6 +156,7 @@
 			<version>2.1.13</version>
 			<scope>compile</scope>
 		</dependency>
+
 
 
 	</dependencies>

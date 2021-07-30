@@ -1,14 +1,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-<h:head>
+<head>
+	<h:outputStylesheet library="css" name="style.css" />
+</head>
 
-</h:head>
-
-<h:body>
-	<h:form>
+<body>
+	<form>
 		<p:messages id="messages" />
 		<p:panelGrid columns="2">
 			<p:outputLabel for="id" value="ID:" />
@@ -31,6 +32,22 @@
 			</p:commandButton>
 
 		</p:panelGrid>
-	</h:form>
-</h:body>
+	</form>
+	
+	
+
+	<div class="card">
+		<h5>Cadastro</h5>
+		<div class="p-formgroup-inline">
+			<div class="p-field">
+				<label for="firstname5" class="p-sr-only">Nome Completo</label>
+				<p:inputText id="firstname5" type="text" placeholder="Firstname" />
+			</div>
+			<div class="p-field">
+				<label for="lastname5" class="p-sr-only">Apelido</label>
+				<p:inputText id="lastname5" type="text" placeholder="Lastname" />
+			</div>
+		</div>
+	</div>
+</body>
 </html>
