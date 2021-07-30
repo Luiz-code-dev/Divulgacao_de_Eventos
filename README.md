@@ -33,5 +33,9 @@ Realizar convite para outros usuarios e rede de amigos;
 # Como acessar: 
 
 Faz o clone do repositororio do GitHub e executa com a IDE de sua preferencia. 
+  
+  #Heroku
+  
+  https://desafioacpgroup.herokuapp.com/
 
 Abre seu navegor (Chrome ou outro de sua preferencia) e digita http://localhost:8080/EventoEsportivo/Login.xhtml <p> Acessando consequentemente a pagina de Login e Cadastro
