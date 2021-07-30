@@ -157,6 +157,14 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.heroku.sdk/heroku-maven-plugin -->
+		<dependency>
+			<groupId>com.heroku.sdk</groupId>
+			<artifactId>heroku-maven-plugin</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+
+
 
 
 	</dependencies>
@@ -176,6 +184,17 @@
 		<finalName>EventoEsportivo</finalName>
 		<plugins>
 			<plugin>
+				<plugin>
+					<groupId>com.heroku.sdk</groupId>
+					<artifactId>heroku-maven-plugin</artifactId>
+					<version>1.2.0</version>
+					<configuration>
+						<appName>lojapdv</appName>
+					</configuration>
+				</plugin>
+
+
+
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${compiler.version}</version>
